@@ -1,0 +1,24 @@
+behaviors:
+  RollerBall:
+    trainer_type: custom_dqn
+    hyperparameters:
+      batch_size: 64
+      buffer_size: 1200
+      learning_rate: 1.0e-4
+      epsilon_start: 0.99
+      epsilon_end: 0.3
+      epsilon_decay: 0.99995
+      gamma: 0.99
+    network_settings:
+      normalize: true
+      hidden_units: 128
+      num_layers: 2
+    reward_signals:
+      extrinsic:
+        gamma: 0.99
+        strength: 1.0
+    max_steps: 500000
+    time_horizon: 64
+    summary_freq: 10000
+    keep_checkpoints: 5
+    #checkpoint_interval: 50000

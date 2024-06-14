@@ -1,0 +1,29 @@
+{
+    "RollerBall": {
+        "checkpoints": [
+            {
+                "steps": 73786,
+                "file_path": "results\\AgentBall05\\RollerBall\\RollerBall-73786.onnx",
+                "reward": 0.0,
+                "creation_time": 1718305132.7043135,
+                "auxillary_file_paths": [
+                    "results\\AgentBall05\\RollerBall\\RollerBall-73786.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 73786,
+            "file_path": "results\\AgentBall05\\RollerBall.onnx",
+            "reward": 0.0,
+            "creation_time": 1718305132.7043135,
+            "auxillary_file_paths": [
+                "results\\AgentBall05\\RollerBall\\RollerBall-73786.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0.dev0",
+        "torch_version": "2.2.1+cpu"
+    }
+}

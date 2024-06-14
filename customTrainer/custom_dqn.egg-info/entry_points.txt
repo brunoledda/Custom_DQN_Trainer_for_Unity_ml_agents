@@ -1,0 +1,2 @@
+[mlagents.trainer_type]
+custom_dqn = custom_dqn_trainer.custom_dqn:get_type_and_setting

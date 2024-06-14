@@ -1,0 +1,68 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1718306928",
+        "python_version": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\Utente\\UnityProject\\RL agent\\venv\\Scripts\\mlagents-learn config/agent_ball_config.yaml --run-id=AgentBall08",
+        "mlagents_version": "1.1.0.dev0",
+        "mlagents_envs_version": "1.1.0.dev0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "2.2.1+cpu",
+        "numpy_version": "1.23.5",
+        "end_time_seconds": "1718306939"
+    },
+    "total": 11.686518999747932,
+    "count": 1,
+    "self": 0.046883899718523026,
+    "children": {
+        "run_training.setup": {
+            "total": 0.1478571998886764,
+            "count": 1,
+            "self": 0.1478571998886764
+        },
+        "TrainerController.start_learning": {
+            "total": 11.491777900140733,
+            "count": 1,
+            "self": 0.00020219990983605385,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 11.335138100199401,
+                    "count": 1,
+                    "self": 11.335138100199401
+                },
+                "TrainerController.advance": {
+                    "total": 0.0004071001894772053,
+                    "count": 1,
+                    "self": 1.950003206729889e-05,
+                    "children": {
+                        "env_step": {
+                            "total": 0.0003876001574099064,
+                            "count": 1,
+                            "self": 0.0002263002097606659,
+                            "children": {
+                                "SubprocessEnvManager._take_step": {
+                                    "total": 0.0001612999476492405,
+                                    "count": 1,
+                                    "self": 0.0001612999476492405
+                                }
+                            }
+                        }
+                    }
+                },
+                "TrainerController._save_models": {
+                    "total": 0.1560304998420179,
+                    "count": 1,
+                    "self": 0.01415589964017272,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.14187460020184517,
+                            "count": 1,
+                            "self": 0.14187460020184517
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
